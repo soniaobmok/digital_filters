@@ -17,32 +17,21 @@ namespace optimalfilters {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-	//using namespace System::IO;
 	using namespace System::Collections::Generic;
 	using namespace System::Drawing::Drawing2D;
-	//using namespace System::Drawing;
 	using namespace System::Windows::Forms::DataVisualization::Charting;
 
 	double* input_signal = new double[I];
 
-	/// <summary>
-	/// —водка дл€ FormMain
-	/// </summary>
 	public ref class FormMain : public System::Windows::Forms::Form
 	{
 	public:
 		FormMain(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: добавьте код конструктора
-			//
 		}
 
 	protected:
-		/// <summary>
-		/// ќсвободить все используемые ресурсы.
-		/// </summary>
 		~FormMain()
 		{
 			if (components)
@@ -65,16 +54,10 @@ namespace optimalfilters {
 	private: System::Windows::Forms::GroupBox^  groupBox_signal_type;
 
 	private:
-		/// <summary>
-		/// ќб€зательна€ переменна€ конструктора.
-		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
-		/// <summary>
-		/// “ребуемый метод дл€ поддержки конструктора Ч не измен€йте 
-		/// содержимое этого метода с помощью редактора кода.
-		/// </summary>
+
 		void InitializeComponent(void)
 		{
 			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea2 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
